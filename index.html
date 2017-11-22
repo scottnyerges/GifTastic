@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+	<meta charset="UFT-8">
+	<title>gif-a-l</title>
+	<!-- AJAX -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- A CONTAINER TO BIND THEM ALL -->
+<div class="container" id="containerStyle">
+
+<!-- A ROW -->
+
+<div class="row" id="rowStyle">
+
+<!-- COLUMN 1 OF 2 -->
+<div class="column" id="columnStyle">
+
+<!-- THIS WILL DISPLAY AN ARRAY OF PREPOPULATED BUTTONS -->
+<button class="btn" cartoonButtons="Bugs Bunny">Bugs Bunny</button>
+<button class="btn" cartoonButtons="Jessica Rabbit">Jessica Rabbit</button>
+<button class="btn" cartoonButtons="Scooby Doo">Scooby Doo</button>
+<button class="btn" cartoonButtons="Brian the Dog">Brian the Dog</button>
+<button class="btn" cartoonButtons="Lisa Simpson">Lisa Simpson</button>
+<button class="btn" cartoonButtons="Pepa Pig">Pepa Pig</button>
+
+<!-- THIS WILL DISPLAY ADDITIONAL BUTTONS AS THE USER GENERATES THEM -->
+<div id="cartoonButtons"></div>	
+
+<!-- THIS FIELD WILL DISPLAY THE GIFS -->
+<div id="cartoons"></div>	
+</div>
+
+<!-- COLUMN 2 OF 2 -->
+<div class="column" id="columnStyle" align="right">
+
+<!-- THIS WILL DISPLAY A USER INPUT WINDOW AND SUBMIT BUTTON -->
+<form id="cartoonForm">
+	<label for "cartoon.length">Add a cartoon character</label>
+	<input type="text" id="cartoonInput"><br>
+	<button id="addCartoon" type="submit" value="Submit">Submit</button>
+</form>
+</div>
+
+
+<!-- JQUERY -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- CUSTOM JAVASCRIPT -->
+<script type="text/javascript" src="logic.js"></script>
+</body>
+
+</html>
